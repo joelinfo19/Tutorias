@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDocente.Designer.cs">
+      <DependentUpon>FrmDocente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,12 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMantDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantDocente.Designer.cs">
+      <DependentUpon>FrmMantDocente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMantEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +94,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDocente.resx">
+      <DependentUpon>FrmDocente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEstudiante.resx">
       <DependentUpon>FrmEstudiante.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantDocente.resx">
+      <DependentUpon>FrmMantDocente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantEstudiante.resx">
       <DependentUpon>FrmMantEstudiante.cs</DependentUpon>

@@ -42,6 +42,10 @@ namespace CapaPresentacion
         {
             AbrirFormulriosEnWrapper(new FrmEstudiante());
         }
+        private void btnDocentes_Click(object sender, EventArgs e)
+        {
+            AbrirFormulriosEnWrapper(new FrmDocente());
+        }
         private Form FormActive = null;
         private void AbrirFormulriosEnWrapper(Form FormHijo)
         {

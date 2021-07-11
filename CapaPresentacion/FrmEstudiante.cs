@@ -30,12 +30,12 @@ namespace CapaPresentacion
         public void MostrarTablaEstudiante()
         {
             N_Estudiante oEstudiante = new N_Estudiante();
-            TablaEstudiante.DataSource = oEstudiante.ListingProducts();
+            TablaEstudiante.DataSource = oEstudiante.ListingStudents();
         }
         public void BuscarEstudiante(string search)
         {
             N_Estudiante n_Estudiante = new N_Estudiante();
-            TablaEstudiante.DataSource = oEstudiante.SearchingProducts(search);
+            TablaEstudiante.DataSource = oEstudiante.SearchingStudents(search);
 
         }
         public void textBuscar_TextChanged(object sender,EventArgs e)
@@ -54,13 +54,13 @@ namespace CapaPresentacion
         {
             if (TablaEstudiante.Rows[e.RowIndex].Cells["eliminar"].Selected)
             {
-                Form message = new FrmInformation("¿ESTAS SEGURO DE ELIMINAR EL PRODUCTO?");
+                Form message = new FrmInformation("¿ESTAS SEGURO DE ELIMINAR EL ESTUDIANTE?");
                 DialogResult result = message.ShowDialog();
 
                 if (result == DialogResult.OK)
                 {
                     int delete = Convert.ToInt32(TablaEstudiante.Rows[e.RowIndex].Cells[2].Value.ToString());
-                    oEstudiante.DeletingProducts(delete);
+                    oEstudiante.DeletingStudents(delete);
                     FrmSuccess.confirmacionForm("ELIMINADO");
                     MostrarTablaEstudiante();
                    // ShowTotal();

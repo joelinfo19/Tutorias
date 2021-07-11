@@ -14,25 +14,23 @@ namespace CapaDatos
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
       
+        public DataTable ListStudents()
+        {
+            DataTable table = new DataTable();
+            SqlDataReader readRows;
+            SqlCommand cmd = new SqlCommand("SP_LISTARESTUDIANTE", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
 
+            readRows = cmd.ExecuteReader();
+            table.Load(readRows);
 
-            public DataTable ListProducts()
-            {
-                DataTable table = new DataTable();
-                SqlDataReader readRows;
-                SqlCommand cmd = new SqlCommand("SP_LISTARESTUDIANTE", conexion);
-                cmd.CommandType = CommandType.StoredProcedure;
-                conexion.Open();
+            readRows.Close();
+            conexion.Close();
 
-                readRows = cmd.ExecuteReader();
-                table.Load(readRows);
-
-                readRows.Close();
-                conexion.Close();
-
-                return table;
-            }
-        public DataTable SearchProducts(E_Estudiante estudiante)
+            return table;
+        }
+        public DataTable SearchStudents(E_Estudiante estudiante)
         {
             DataTable tabla = new DataTable();
             SqlCommand cmd = new SqlCommand("SP_BUSCARESTUDIANTE", conexion);
@@ -48,7 +46,7 @@ namespace CapaDatos
             return tabla;
         }
 
-        public void DeleteProduct(int id)
+        public void DeleteStudent(int id)
         {
             SqlCommand cmd = new SqlCommand("SP_ELIMINARESTUDIANTE", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -60,7 +58,7 @@ namespace CapaDatos
             conexion.Close();
         }
 
-        public void CreateProduct(E_Estudiante estudiante)
+        public void CreateStudent(E_Estudiante estudiante)
         {
 
             SqlCommand cmd = new SqlCommand("SP_INSERTARESTUDIANTE", conexion);
@@ -75,7 +73,7 @@ namespace CapaDatos
             conexion.Close();
         }
 
-        public void UpdateProduct(E_Estudiante estudiante)
+        public void UpdateStudent(E_Estudiante estudiante)
         {
             SqlCommand cmd = new SqlCommand("SP_EDITARESTUDIANTE", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
