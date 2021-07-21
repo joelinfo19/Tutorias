@@ -75,5 +75,10 @@ namespace CapaPresentacion
                 }
             }
         }
+
+        private void textCategoria_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

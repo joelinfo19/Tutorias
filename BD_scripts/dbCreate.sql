@@ -7,6 +7,7 @@ create table Estudiante(
 	Escuela varchar (20),
 	PRIMARY KEY (IdEstudiante)
 );
+--drop table
 create table Docente(
 	IdDocente int identity(1,1),
 	Nombres varchar(20),
@@ -14,6 +15,7 @@ create table Docente(
 	TituloAcademico varchar (20),
 	Facultad varchar(60),
 	EscuelaProfesional varchar(60),
+	Categoria varchar (60),
 	PRIMARY KEY (IdDocente)
 );
 
@@ -22,8 +24,8 @@ insert into Estudiante
 values ('lucero','quispe','informatica')
 insert into Estudiante
 values ('Maria','Fernandez','informatica')
---drop table Estudiante
-select * from Estudiante
+drop table Estudiante
+--select * from Estudiante
 --------------------------------------------
 ---PROCEDIMIENTO ALMACENADO BUSCARESTUDIANTE
 CREATE PROC SP_BUSCARESTUDIANTE
@@ -67,19 +69,7 @@ Estudiante.Escuela
 from Estudiante
 order by IdEstudiante asc
 select * from Estudiante
---- Search students
-create proc SP_BUSCARESTUDIANTE
-@BUSCAR nvarchar(20)
-as
-select top 100 
-Estudiante.IdEstudiante,
-Estudiante.CodEstudiante,
-Estudiante.Nombres,
-Estudiante.Apellidos,
-Estudiante.Escuela
-from Estudiante
-order by IdEstudiante asc, 
-where Nombres like @BUSCAR + '%'
+
 ---------------------------------
 ---Procedimientos almacenados para Docente
 ----Stored Procedures for search Docente
@@ -89,22 +79,26 @@ as
 select * from Docente
 where Nombres like @BUSCAR + '%'
 ---Stored Procedures for insert Docente
+-- drop procedure SP_INSERTARDOCENTE
 create proc SP_INSERTARDOCENTE
 @NOMBRES varchar(20),
 @APELLIDOS varchar(20),
 @TITULO varchar(20),
 @FACULTAD varchar(60),
-@EPROFESIONAL varchar(60)
+@EPROFESIONAL varchar(60),
+@CATEGORIA varchar (60)
 as
-insert into Docente values(@NOMBRES,@APELLIDOS,@TITULO,@FACULTAD,@EPROFESIONAL)
+insert into Docente values(@NOMBRES,@APELLIDOS,@TITULO,@FACULTAD,@EPROFESIONAL,@CATEGORIA)
 ------- Stored Procedures for update Docente
+-- drop procedure  SP_EDITARDOCENTE 
 create proc SP_EDITARDOCENTE
 @IDDOCENTE int,
 @NOMBRES varchar(20),
 @APELLIDOS varchar(20),
 @TITULO varchar(20),
 @FACULTAD varchar(60),
-@EPROFESIONAL varchar(60)
+@EPROFESIONAL varchar(60),
+@CATEGORIA varchar (60)
 as 
 update Docente set Nombres=@NOMBRES,Apellidos=@APELLIDOS,TituloAcademico=@TITULO,Facultad=@FACULTAD,EscuelaProfesional=@EPROFESIONAL
 where IdDocente =@IDDOCENTE
@@ -123,7 +117,8 @@ Docente.Nombres,
 Docente.Apellidos,
 Docente.TituloAcademico,
 Docente.Facultad,
-Docente.EscuelaProfesional
+Docente.EscuelaProfesional,
+Docente.Categoria
 from Docente
 order by IdDocente asc
 select * from Docente
@@ -137,25 +132,30 @@ select * from Docente
 
 
 
+
 --drop procedure SP_ELIMINARDOCENTE
 
 
 
 
---select * from Docente
---select * from Estudiante
---exec SP_BUSCARDOCENTE 'a'
---exec SP_LISTARESTUDIANTE
---exec SP_INSERTARDOCENTE 'pepe','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas'
---exec SP_EDITARDOCENTE 3,'adriana','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas'
+select * from Docente
+select * from Estudiante
+exec SP_BUSCARDOCENTE 'a'
+exec SP_LISTARESTUDIANTE
+exec SP_INSERTARDOCENTE 'pepe','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas'
+exec SP_EDITARDOCENTE 3,'adriana','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas'
 
---insert into Docente values ('juan','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
---insert into Docente values ('joel','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
---insert into Docente values ('adriana','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
+insert into Docente values ('juan','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
+insert into Docente values ('joel','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
+insert into Docente values ('adriana','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
 
---ALTER TABLE Docente
---ALTER COLUMN Facultad varchar(60);
---ALTER TABLE Docente
---ALTER COLUMN IdDocente int identity(1,1);
---DELETE FROM Docente WHERE Nombres='adriana';]
---drop table Docente
+ALTER TABLE Docente
+ALTER COLUMN Facultad varchar(60);
+ALTER TABLE Docente
+ALTER COLUMN IdDocente int identity(1,1);
+DELETE FROM Docente WHERE Nombres='adriana';]
+drop table Docente
+
+--Agregar docentes con datos reales
+insert into Docente values ('Abdon','Ribas Pugn','Lic. matematicas','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas','Nombrado')
+insert into Docente values ('','','','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas','')

@@ -78,6 +78,7 @@ namespace CapaPresentacion
                 frm.textTitulo.Text = TablaDocente.Rows[e.RowIndex].Cells["TituloAcademico"].Value.ToString();
                 frm.textFacultad.Text = TablaDocente.Rows[e.RowIndex].Cells["Facultad"].Value.ToString();
                 frm.textEscuela.Text = TablaDocente.Rows[e.RowIndex].Cells["EscuelaProfesional"].Value.ToString();
+                frm.textCategoria.Text = TablaDocente.Rows[e.RowIndex].Cells["Categoria"].Value.ToString();
 
                 frm.ShowDialog();
                 MostrarTablaDocente();
