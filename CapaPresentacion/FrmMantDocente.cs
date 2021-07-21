@@ -39,6 +39,7 @@ namespace CapaPresentacion
                     entities.TituloAcademico = textTitulo.Text;
                     entities.Facultad = textFacultad.Text;
                     entities.EscuelaProfesional = textEscuela.Text;
+                    entities.Categoria = textCategoria.Text;
 
                     business.CreatingDocente(entities);
                     FrmSuccess.confirmacionForm("DOCENTE GUARDADO");
@@ -60,6 +61,7 @@ namespace CapaPresentacion
                     entities.TituloAcademico = textTitulo.Text;
                     entities.Facultad = textFacultad.Text;
                     entities.EscuelaProfesional = textEscuela.Text;
+                    entities.Categoria = textCategoria.Text;
 
                     business.UpdatingDocente(entities);
 
@@ -77,6 +79,11 @@ namespace CapaPresentacion
         }
 
         private void textCategoria_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textCategoria_TextChanged(object sender, EventArgs e)
         {
 
         }

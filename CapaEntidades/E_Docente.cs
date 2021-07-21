@@ -14,6 +14,7 @@ namespace CapaEntidades
         private string _TituloAcademico;
         private string _Facultad;
         private string _EscuelaProfesional;
+        private string _Categoria;
 
         private string search;
 
@@ -24,5 +25,6 @@ namespace CapaEntidades
         public string Facultad { get => _Facultad; set => _Facultad = value; }
         public string EscuelaProfesional { get => _EscuelaProfesional; set => _EscuelaProfesional = value; }
         public string Search { get => search; set => search = value; }
+        public string Categoria { get => _Categoria; set => _Categoria = value; }
     }
 }
