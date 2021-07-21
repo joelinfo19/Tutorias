@@ -22,7 +22,7 @@ insert into Estudiante
 values ('lucero','quispe','informatica')
 insert into Estudiante
 values ('Maria','Fernandez','informatica')
-drop table Estudiante
+--drop table Estudiante
 select * from Estudiante
 --------------------------------------------
 ---PROCEDIMIENTO ALMACENADO BUSCARESTUDIANTE
@@ -128,34 +128,34 @@ from Docente
 order by IdDocente asc
 select * from Docente
 
-exec SP_LISTARDOCENTE
+--exec SP_LISTARDOCENTE
 
-drop procedure SP_LISTARDOCENTE
-
-
+--drop procedure SP_LISTARDOCENTE
 
 
 
 
-drop procedure SP_ELIMINARDOCENTE
+
+
+--drop procedure SP_ELIMINARDOCENTE
 
 
 
 
-select * from Docente
-select * from Estudiante
-exec SP_BUSCARDOCENTE 'a'
-exec SP_LISTARESTUDIANTE
-exec SP_INSERTARDOCENTE 'pepe','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas'
-exec SP_EDITARDOCENTE 3,'adriana','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas'
+--select * from Docente
+--select * from Estudiante
+--exec SP_BUSCARDOCENTE 'a'
+--exec SP_LISTARESTUDIANTE
+--exec SP_INSERTARDOCENTE 'pepe','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas'
+--exec SP_EDITARDOCENTE 3,'adriana','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas'
 
-insert into Docente values ('juan','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
-insert into Docente values ('joel','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
-insert into Docente values ('adriana','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
+--insert into Docente values ('juan','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
+--insert into Docente values ('joel','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
+--insert into Docente values ('adriana','martinez','magister','Informatica,mecanica,electrica y electronica','Ing Informatica y de Sistemas')
 
-ALTER TABLE Docente
-ALTER COLUMN Facultad varchar(60);
-ALTER TABLE Docente
-ALTER COLUMN IdDocente int identity(1,1);
-DELETE FROM Docente WHERE Nombres='adriana';]
-drop table Docente
+--ALTER TABLE Docente
+--ALTER COLUMN Facultad varchar(60);
+--ALTER TABLE Docente
+--ALTER COLUMN IdDocente int identity(1,1);
+--DELETE FROM Docente WHERE Nombres='adriana';]
+--drop table Docente
