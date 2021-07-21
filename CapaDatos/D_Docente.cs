@@ -70,6 +70,7 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@TITULO", docente.TituloAcademico);
             cmd.Parameters.AddWithValue("@FACULTAD", docente.Facultad);
             cmd.Parameters.AddWithValue("@EPROFESIONAL", docente.EscuelaProfesional);
+            cmd.Parameters.AddWithValue("@CATEGORIA", docente.Categoria);
 
             cmd.ExecuteNonQuery();
             conexion.Close();
@@ -87,6 +88,7 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@TITULO", docente.TituloAcademico);
             cmd.Parameters.AddWithValue("@FACULTAD", docente.Facultad);
             cmd.Parameters.AddWithValue("@EPROFESIONAL", docente.EscuelaProfesional);
+            cmd.Parameters.AddWithValue("@CATEGORIA", docente.Categoria);
 
 
             cmd.ExecuteNonQuery();
