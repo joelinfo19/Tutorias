@@ -90,3 +90,4 @@ D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\Repositorio
 D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources

@@ -24,8 +24,8 @@ namespace CapaPresentacion
 
         public void OcultarMoverAncharColumnas()
         {
-            TablaDocente.Columns[0].DisplayIndex = 7;
-            TablaDocente.Columns[1].DisplayIndex = 7;
+            TablaDocente.Columns[0].DisplayIndex = 8;
+            TablaDocente.Columns[1].DisplayIndex = 8;
 
         }
         public void MostrarTablaDocente()
