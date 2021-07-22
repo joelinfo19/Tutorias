@@ -18,6 +18,12 @@ create table Docente(
 	Categoria varchar (60),
 	PRIMARY KEY (IdDocente)
 );
+create table Logins(
+	Usuario varchar(40) not null,
+	Contraseña varchar(40) not null,
+	CategoriaLogin varchar (40)
+);
+insert into Logins values ('Yo','123','Nombrado')
 
 
 insert into Estudiante
@@ -126,13 +132,6 @@ select * from Docente
 --exec SP_LISTARDOCENTE
 
 --drop procedure SP_LISTARDOCENTE
-
-
-
-
-
-
-
 --drop procedure SP_ELIMINARDOCENTE
 
 
