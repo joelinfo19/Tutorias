@@ -24,6 +24,7 @@ create table Logins(
 	CategoriaLogin varchar (40)
 );
 insert into Logins values ('Yo','123','Nombrado')
+insert into Logins values ('Cata','cata','Contratado')
 
 
 insert into Estudiante
