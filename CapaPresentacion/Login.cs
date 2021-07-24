@@ -36,14 +36,17 @@ namespace CapaPresentacion
                         {
                             MessageBox.Show("Login exitoso.");
                             obtenerusuario();
+                            Close();
                            
-                            FrmMain aea = new FrmMain();
-                            aea.ShowDialog();
+                            //FrmMain aea = new FrmMain();
+                            //aea.ShowDialog();
                             
                         }
                         else
                         {
                             MessageBox.Show("Datos incorrectos.");
+                            txtusuario.Text = "";
+                            txtcontraseña.Text = "";
                         }
                     }
                 }
