@@ -41,9 +41,11 @@ namespace CapaPresentacion
                     entities.Nombres = textNombres.Text;
                  //   entities.IdEstudiante = Convert.ToInt32(textCodigo.Text);
                     entities.Apellidos = textApellidos.Text;
-                    entities.Escuela = textEscuela.Text;
-                   
-
+                    entities.EscuelaProfesional = textEscuela.Text;
+                    entities.CodEP = txtIdEP.Text;
+                    entities.Estudiante = txtCodEstudiante.Text;
+                    entities.AIngreso = txtIngreso.Text;
+                    entities.SemestreActivo = txtSemestreActivo.Text;
                     business.CreatingStudents(entities);
                     FrmSuccess.confirmacionForm("ESTUDIANTE GUARDADO");
                     Close();
@@ -57,12 +59,15 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    entities.IdEstudiante = Convert.ToInt32(textId.Text);
+                   // entities.IdEstudiante = Convert.ToInt32(txtIdEP.Text);
                     entities.Nombres = textNombres.Text;
-                   // entities.IdEstudiante = Convert.ToInt32(textCodigo.Text);
+                    // entities.IdEstudiante = Convert.ToInt32(textCodigo.Text);
                     entities.Apellidos = textApellidos.Text;
-                    entities.Escuela = textEscuela.Text;
-
+                    entities.EscuelaProfesional = textEscuela.Text;
+                    entities.CodEP = txtIdEP.Text;
+                    entities.Estudiante = txtCodEstudiante.Text;
+                    entities.AIngreso = txtIngreso.Text;
+                    entities.SemestreActivo = txtSemestreActivo.Text;
                     business.UpdatingStudents(entities);
 
                     //     successView.confirmForm("PRODUCTO EDITADO");
@@ -79,6 +84,11 @@ namespace CapaPresentacion
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void FrmMantEstudiante_Load(object sender, EventArgs e)
         {
 
         }

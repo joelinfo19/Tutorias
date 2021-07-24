@@ -72,5 +72,10 @@ namespace CapaPresentacion
                 this.Hide();
             }
         }
+
+        private void Sidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
