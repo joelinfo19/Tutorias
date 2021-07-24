@@ -57,7 +57,7 @@ namespace CapaPresentacion
             this.Sidebar.Controls.Add(this.btnEstudiantes);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.Sidebar.Location = new System.Drawing.Point(0, 0);
-            this.Sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Size = new System.Drawing.Size(333, 703);
             this.Sidebar.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace CapaPresentacion
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(99, 47);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,7 +102,7 @@ namespace CapaPresentacion
             this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "Tutores";
+            this.bunifuFlatButton3.ButtonText = "            Tutores";
             this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
@@ -118,7 +118,7 @@ namespace CapaPresentacion
             this.bunifuFlatButton3.IconZoom = 90D;
             this.bunifuFlatButton3.IsTab = false;
             this.bunifuFlatButton3.Location = new System.Drawing.Point(16, 390);
-            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -126,10 +126,11 @@ namespace CapaPresentacion
             this.bunifuFlatButton3.selected = false;
             this.bunifuFlatButton3.Size = new System.Drawing.Size(288, 46);
             this.bunifuFlatButton3.TabIndex = 2;
-            this.bunifuFlatButton3.Text = "Tutores";
+            this.bunifuFlatButton3.Text = "            Tutores";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
             // 
             // btnDocentes
             // 
@@ -137,7 +138,7 @@ namespace CapaPresentacion
             this.btnDocentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnDocentes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDocentes.BorderRadius = 0;
-            this.btnDocentes.ButtonText = "Profesores";
+            this.btnDocentes.ButtonText = "            Profesores";
             this.btnDocentes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDocentes.DisabledColor = System.Drawing.Color.Gray;
             this.btnDocentes.Iconcolor = System.Drawing.Color.Transparent;
@@ -153,7 +154,7 @@ namespace CapaPresentacion
             this.btnDocentes.IconZoom = 90D;
             this.btnDocentes.IsTab = false;
             this.btnDocentes.Location = new System.Drawing.Point(16, 337);
-            this.btnDocentes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnDocentes.Margin = new System.Windows.Forms.Padding(5);
             this.btnDocentes.Name = "btnDocentes";
             this.btnDocentes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnDocentes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -161,7 +162,7 @@ namespace CapaPresentacion
             this.btnDocentes.selected = false;
             this.btnDocentes.Size = new System.Drawing.Size(288, 46);
             this.btnDocentes.TabIndex = 1;
-            this.btnDocentes.Text = "Profesores";
+            this.btnDocentes.Text = "            Profesores";
             this.btnDocentes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDocentes.Textcolor = System.Drawing.Color.White;
             this.btnDocentes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,7 +174,7 @@ namespace CapaPresentacion
             this.btnEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnEstudiantes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEstudiantes.BorderRadius = 0;
-            this.btnEstudiantes.ButtonText = "Estudiantes";
+            this.btnEstudiantes.ButtonText = "            Estudiantes";
             this.btnEstudiantes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstudiantes.DisabledColor = System.Drawing.Color.Gray;
             this.btnEstudiantes.Iconcolor = System.Drawing.Color.Transparent;
@@ -189,7 +190,7 @@ namespace CapaPresentacion
             this.btnEstudiantes.IconZoom = 90D;
             this.btnEstudiantes.IsTab = false;
             this.btnEstudiantes.Location = new System.Drawing.Point(16, 281);
-            this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(5);
             this.btnEstudiantes.Name = "btnEstudiantes";
             this.btnEstudiantes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnEstudiantes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -197,7 +198,7 @@ namespace CapaPresentacion
             this.btnEstudiantes.selected = false;
             this.btnEstudiantes.Size = new System.Drawing.Size(288, 46);
             this.btnEstudiantes.TabIndex = 0;
-            this.btnEstudiantes.Text = "Estudiantes";
+            this.btnEstudiantes.Text = "            Estudiantes";
             this.btnEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEstudiantes.Textcolor = System.Drawing.Color.White;
             this.btnEstudiantes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -209,7 +210,7 @@ namespace CapaPresentacion
             this.Header.Controls.Add(this.Salir);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(333, 0);
-            this.Header.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Header.Margin = new System.Windows.Forms.Padding(4);
             this.Header.Name = "Header";
             this.Header.Size = new System.Drawing.Size(1362, 74);
             this.Header.TabIndex = 1;
@@ -219,7 +220,7 @@ namespace CapaPresentacion
             this.Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
             this.Salir.Location = new System.Drawing.Point(1222, 15);
-            this.Salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Salir.Margin = new System.Windows.Forms.Padding(4);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(53, 46);
             this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -232,7 +233,7 @@ namespace CapaPresentacion
             this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(333, 0);
-            this.Wrapper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Wrapper.Margin = new System.Windows.Forms.Padding(4);
             this.Wrapper.Name = "Wrapper";
             this.Wrapper.Size = new System.Drawing.Size(1362, 703);
             this.Wrapper.TabIndex = 2;
@@ -246,7 +247,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.Sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
