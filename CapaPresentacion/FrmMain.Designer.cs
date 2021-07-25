@@ -57,19 +57,13 @@ namespace CapaPresentacion
             this.Sidebar.Controls.Add(this.btnEstudiantes);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.Sidebar.Location = new System.Drawing.Point(0, 0);
-//<<<<<<< HEAD
             this.Sidebar.Margin = new System.Windows.Forms.Padding(4);
-//=======
-            //#this.Sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-//>>>>>>> Katheryne
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Size = new System.Drawing.Size(333, 703);
             this.Sidebar.TabIndex = 0;
-            //this.Sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.Sidebar_Paint);
             // 
             // labelUsuario
             // 
-//<<<<<<< HEAD
             this.labelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelUsuario.ForeColor = System.Drawing.Color.White;
             this.labelUsuario.Location = new System.Drawing.Point(80, 177);
@@ -79,27 +73,12 @@ namespace CapaPresentacion
             this.labelUsuario.TabIndex = 5;
             this.labelUsuario.Text = "USUARIO1";
             this.labelUsuario.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-//=======
-            /*this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(80, 177);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 28);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "USUARIO1";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;*/
-//>>>>>>> Katheryne
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(99, 47);
-//<<<<<<< HEAD
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-//=======
-            //#this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-//>>>>>>> Katheryne
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,7 +87,6 @@ namespace CapaPresentacion
             // 
             // labelCategoria
             // 
-//<<<<<<< HEAD
             this.labelCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelCategoria.ForeColor = System.Drawing.Color.White;
             this.labelCategoria.Location = new System.Drawing.Point(127, 15);
@@ -117,16 +95,6 @@ namespace CapaPresentacion
             this.labelCategoria.Size = new System.Drawing.Size(75, 28);
             this.labelCategoria.TabIndex = 3;
             this.labelCategoria.Text = "CRUD";
-//=======
-            /*this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(127, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 28);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "CRUD";*/
-//>>>>>>> Katheryne
             // 
             // bunifuFlatButton3
             // 
@@ -150,11 +118,7 @@ namespace CapaPresentacion
             this.bunifuFlatButton3.IconZoom = 90D;
             this.bunifuFlatButton3.IsTab = false;
             this.bunifuFlatButton3.Location = new System.Drawing.Point(16, 390);
-//<<<<<<< HEAD
             this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(5);
-//=======
-            //this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-//>>>>>>> Katheryne
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -190,11 +154,7 @@ namespace CapaPresentacion
             this.btnDocentes.IconZoom = 90D;
             this.btnDocentes.IsTab = false;
             this.btnDocentes.Location = new System.Drawing.Point(16, 337);
-//<<<<<<< HEAD
             this.btnDocentes.Margin = new System.Windows.Forms.Padding(5);
-//=======
-            //this.btnDocentes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-//>>>>>>> Katheryne
             this.btnDocentes.Name = "btnDocentes";
             this.btnDocentes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnDocentes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -229,13 +189,8 @@ namespace CapaPresentacion
             this.btnEstudiantes.IconVisible = true;
             this.btnEstudiantes.IconZoom = 90D;
             this.btnEstudiantes.IsTab = false;
-//<<<<<<< HEAD
             this.btnEstudiantes.Location = new System.Drawing.Point(16, 281);
             this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(5);
-//=======
-            //this.btnEstudiantes.Location = new System.Drawing.Point(16, 284);
-            //this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-//>>>>>>> Katheryne
             this.btnEstudiantes.Name = "btnEstudiantes";
             this.btnEstudiantes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnEstudiantes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -255,11 +210,7 @@ namespace CapaPresentacion
             this.Header.Controls.Add(this.Salir);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(333, 0);
-//<<<<<<< HEAD
             this.Header.Margin = new System.Windows.Forms.Padding(4);
-//=======
-            //this.Header.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-//>>>>>>> Katheryne
             this.Header.Name = "Header";
             this.Header.Size = new System.Drawing.Size(1362, 74);
             this.Header.TabIndex = 1;
@@ -269,11 +220,7 @@ namespace CapaPresentacion
             this.Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
             this.Salir.Location = new System.Drawing.Point(1222, 15);
-//<<<<<<< HEAD
             this.Salir.Margin = new System.Windows.Forms.Padding(4);
-//=======
-            //this.Salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-//>>>>>>> Katheryne
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(53, 46);
             this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -286,11 +233,7 @@ namespace CapaPresentacion
             this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(333, 0);
-//<<<<<<< HEAD
             this.Wrapper.Margin = new System.Windows.Forms.Padding(4);
-//=======
-            //this.Wrapper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-//>>>>>>> Katheryne
             this.Wrapper.Name = "Wrapper";
             this.Wrapper.Size = new System.Drawing.Size(1362, 703);
             this.Wrapper.TabIndex = 2;
@@ -304,11 +247,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.Sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-//<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(4);
-//=======
-            //this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-//>>>>>>> Katheryne
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
