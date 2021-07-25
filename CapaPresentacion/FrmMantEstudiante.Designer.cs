@@ -5,64 +5,77 @@ namespace CapaPresentacion
     {
         /// <summary>
         /// Required designer variable.
-        /// </summary>
+        /// </summary>//
         private System.ComponentModel.IContainer components = null;
-
+//
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
+        {//
+            if (disposing && (components != null))//
             {
                 components.Dispose();
-            }
-            base.Dispose(disposing);
+            }//
+            base.Dispose(disposing);////
         }
 
         #region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// the contents of this method with the code editor.///
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();//
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMantEstudiante));
             this.MoverFormulario = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();//
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.topFormulario = new System.Windows.Forms.Panel();
-            this.textNombres = new System.Windows.Forms.TextBox();
+
+            this.textNombres = new System.Windows.Forms.TextBox();//
+
             this.textCodigo = new System.Windows.Forms.TextBox();
             this.textEscuela = new System.Windows.Forms.TextBox();
-            this.textApellidos = new System.Windows.Forms.TextBox();
+            this.textApellidos = new System.Windows.Forms.TextBox();//
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.textId = new System.Windows.Forms.TextBox();
+
+            this.txtIdEP = new System.Windows.Forms.TextBox();///
             this.Id = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Ingreso = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.txtIngreso = new System.Windows.Forms.TextBox();
+            this.txtSemestreActivo = new System.Windows.Forms.TextBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtCodEstudiante = new System.Windows.Forms.TextBox();
+            this.topFormulario.SuspendLayout();//
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();//
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.topFormulario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();//
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+
             this.SuspendLayout();
             // 
             // MoverFormulario
-            // 
+            // //
             this.MoverFormulario.Fixed = true;
             this.MoverFormulario.Horizontal = true;
             this.MoverFormulario.TargetControl = this.topFormulario;

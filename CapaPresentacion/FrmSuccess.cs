@@ -14,21 +14,21 @@ namespace CapaPresentacion
     {
         public FrmSuccess(string mensaje)
         {
-            InitializeComponent();
+            InitializeComponent();//
             label1.Text = mensaje;
         }
 
-        private void FrmSuccess_Load(object sender, EventArgs e)
+        private void FrmSuccess_Load(object sender, EventArgs e)//
         {
            // esclarecerForm.ShowAsyc(this);
         }
-        public static void confirmacionForm(string mensaje)
+        public static void confirmacionForm(string mensaje)//
         {
             FrmSuccess frm = new FrmSuccess(mensaje);
-            frm.ShowDialog();
+            frm.ShowDialog();//
         }
 
-        private void btnOk_Click(object sender, EventArgs e)
+        private void btnOk_Click(object sender, EventArgs e)//
         {
             this.Close();
         }

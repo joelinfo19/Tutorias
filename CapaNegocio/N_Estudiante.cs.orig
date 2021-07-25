@@ -33,11 +33,15 @@ namespace CapaNegocio
             data.UpdateStudent(product);//
         }
 
-
+<<<<<<< HEAD
+        public void DeletingStudents(int id)
+        {
+            data.DeleteStudent(id);
+=======
         public void DeletingStudents(string CodEstudiante)//
         {
             data.DeleteStudent(CodEstudiante);//
-
+>>>>>>> katheryne2
         }
     }
 }

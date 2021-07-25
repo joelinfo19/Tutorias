@@ -8,7 +8,20 @@ namespace CapaEntidades
 {
     public class E_Estudiante
     {
-
+<<<<<<< HEAD
+        private int _IdEstudiante;
+        private string _CodEstudiante;
+        private string _Nombres;
+        private string _Apellidos;
+        private string _Escuela;
+        private string search;
+        public int IdEstudiante { get => _IdEstudiante; set => _IdEstudiante = value; }
+        public string CodEstudiante { get => _CodEstudiante; set => _CodEstudiante = value; }
+        public string Nombres { get => _Nombres; set => _Nombres = value; }
+        public string Apellidos { get => _Apellidos; set => _Apellidos = value; }
+        public string Escuela { get => _Escuela; set => _Escuela = value; }
+        public string Search { get => search; set => search = value; }
+=======
         private int _IdEstudiante;//
         private string _CodEstudiante;//
         private string _Nombres;//
@@ -29,6 +42,6 @@ namespace CapaEntidades
         public string CodEP { get => _CodEP; set => _CodEP = value; }//
         public string AIngreso { get => _AIngreso; set => _AIngreso = value; }//
         public string Search { get => search; set => search = value; }//
-
+>>>>>>> katheryne2
     }
 }

@@ -15,20 +15,20 @@ namespace CapaPresentacion
     public partial class FrmMantEstudiante : Form
     {
         public bool Update = false;
-        E_Estudiante entities = new E_Estudiante();
+        E_Estudiante entities = new E_Estudiante();//
         N_Estudiante business = new N_Estudiante();
 
-        public FrmMantEstudiante()
+        public FrmMantEstudiante()//
         {
             InitializeComponent();
-        }
+        }//
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+//
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)//
         {
             Close();
         }
@@ -41,10 +41,14 @@ namespace CapaPresentacion
                     entities.Nombres = textNombres.Text;
                  //   entities.IdEstudiante = Convert.ToInt32(textCodigo.Text);
                     entities.Apellidos = textApellidos.Text;
-                    entities.Escuela = textEscuela.Text;
-                   
 
-                    business.CreatingStudents(entities);
+                    entities.EscuelaProfesional = textEscuela.Text;//
+                    entities.CodEP = txtIdEP.Text;
+                    entities.Estudiante = txtCodEstudiante.Text;
+                    entities.AIngreso = txtIngreso.Text;
+                    entities.SemestreActivo = txtSemestreActivo.Text;
+                    business.CreatingStudents(entities);////
+
                     FrmSuccess.confirmacionForm("ESTUDIANTE GUARDADO");
                     Close();
                 }
@@ -57,11 +61,16 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    entities.IdEstudiante = Convert.ToInt32(textId.Text);
-                    entities.Nombres = textNombres.Text;
-                   // entities.IdEstudiante = Convert.ToInt32(textCodigo.Text);
+
+                   // entities.IdEstudiante = Convert.ToInt32(txtIdEP.Text);
+                    entities.Nombres = textNombres.Text;//
+                    // entities.IdEstudiante = Convert.ToInt32(textCodigo.Text);
                     entities.Apellidos = textApellidos.Text;
-                    entities.Escuela = textEscuela.Text;
+                    entities.EscuelaProfesional = textEscuela.Text;//
+                    entities.CodEP = txtIdEP.Text;
+                    entities.Estudiante = txtCodEstudiante.Text;
+                    entities.AIngreso = txtIngreso.Text;
+                    entities.SemestreActivo = txtSemestreActivo.Text;
 
                     business.UpdatingStudents(entities);
 
@@ -69,18 +78,26 @@ namespace CapaPresentacion
                     FrmSuccess.confirmacionForm("ESTUDIANTE EDITADO");
                     Close();
 
-                    Update = false;
+                    Update = false;//
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("No se pudo editar la categoria" + ex);
+                    MessageBox.Show("No se pudo editar la categoria" + ex);//
                 }
             }
         }
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)//
         {
 
         }
+
+//
+        private void FrmMantEstudiante_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
+//
