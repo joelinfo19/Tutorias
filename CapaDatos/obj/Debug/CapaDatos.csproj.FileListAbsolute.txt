@@ -16,3 +16,12 @@ C:\Users\User\Desktop\SoftwareC#\Tut_capas\CapaDatos\obj\Debug\CapaDatos.csproj.
 C:\Users\User\Desktop\SoftwareC#\Tut_capas\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\User\Desktop\SoftwareC#\Tut_capas\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\User\Desktop\SoftwareC#\Tut_capas\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaDatos\bin\Debug\CapaDatos.dll
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaDatos\bin\Debug\CapaEntidades.dll
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaDatos\bin\Debug\CapaEntidades.pdb
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaDatos\obj\Debug\CapaDatos.dll
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaDatos\obj\Debug\CapaDatos.pdb
