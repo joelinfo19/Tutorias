@@ -79,11 +79,14 @@ namespace CapaDatos
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@IDESTUDIANTE", estudiante.IdEstudiante);
+            cmd.Parameters.AddWithValue("@ESTUDIANTE", estudiante.Estudiante);
             cmd.Parameters.AddWithValue("@NOMBRES", estudiante.Nombres);
-            cmd.Parameters.AddWithValue("@APELLIDOS",  estudiante.Apellidos);
-            cmd.Parameters.AddWithValue("@ESCUELA", estudiante.Escuela);
-            
+
+            cmd.Parameters.AddWithValue("@APELLIDOS", estudiante.Apellidos);
+            cmd.Parameters.AddWithValue("@SEMESTREACTIVO", estudiante.SemestreActivo);
+            cmd.Parameters.AddWithValue("@ESCUELAPROFESIONAL", estudiante.EscuelaProfesional);
+            cmd.Parameters.AddWithValue("@CODIGOEP", estudiante.CodEP);
+            cmd.Parameters.AddWithValue("@AINGRESO", estudiante.AIngreso);//comments
 
             cmd.ExecuteNonQuery();
             conexion.Close();

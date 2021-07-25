@@ -6,7 +6,7 @@ namespace CapaPresentacion
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer components = null;//
 
         /// <summary>
         /// Clean up any resources being used.
@@ -18,7 +18,7 @@ namespace CapaPresentacion
             {
                 components.Dispose();
             }
-            base.Dispose(disposing);
+            base.Dispose(disposing);//
         }
 
         #region Windows Form Designer generated code
@@ -56,53 +56,62 @@ namespace CapaPresentacion
             this.Sidebar.Controls.Add(this.btnDocentes);
             this.Sidebar.Controls.Add(this.btnEstudiantes);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Sidebar.Location = new System.Drawing.Point(0, 0);
-            this.Sidebar.Margin = new System.Windows.Forms.Padding(4);
-            this.Sidebar.Name = "Sidebar";
+
+            this.Sidebar.Location = new System.Drawing.Point(0, 0);//
+            this.Sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);//
+            this.Sidebar.Name = "Sidebar";//
             this.Sidebar.Size = new System.Drawing.Size(333, 703);
             this.Sidebar.TabIndex = 0;
+            this.Sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.Sidebar_Paint);//
+
             // 
             // labelUsuario
             // 
-            this.labelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.labelUsuario.ForeColor = System.Drawing.Color.White;
-            this.labelUsuario.Location = new System.Drawing.Point(80, 177);
-            this.labelUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(164, 28);
-            this.labelUsuario.TabIndex = 5;
-            this.labelUsuario.Text = "USUARIO1";
-            this.labelUsuario.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);//
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(80, 177);//
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";//
+            this.label2.Size = new System.Drawing.Size(164, 28);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "USUARIO1";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));//
             this.pictureBox1.Location = new System.Drawing.Point(99, 47);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 111);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(133, 111);//
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;//
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // labelCategoria
             // 
-            this.labelCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.labelCategoria.ForeColor = System.Drawing.Color.White;
-            this.labelCategoria.Location = new System.Drawing.Point(127, 15);
-            this.labelCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelCategoria.Name = "labelCategoria";
-            this.labelCategoria.Size = new System.Drawing.Size(75, 28);
-            this.labelCategoria.TabIndex = 3;
-            this.labelCategoria.Text = "CRUD";
+
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(127, 15);//
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 28);
+            this.label1.TabIndex = 3;//
+            this.label1.Text = "CRUD";
+
             // 
             // bunifuFlatButton3
             // 
             this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "            Tutores";
+
+            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));//
+            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;//
+            this.bunifuFlatButton3.BorderRadius = 0;//
+            this.bunifuFlatButton3.ButtonText = "Tutores";
+
             this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
@@ -116,15 +125,17 @@ namespace CapaPresentacion
             this.bunifuFlatButton3.IconRightZoom = 0D;
             this.bunifuFlatButton3.IconVisible = true;
             this.bunifuFlatButton3.IconZoom = 90D;
-            this.bunifuFlatButton3.IsTab = false;
+            this.bunifuFlatButton3.IsTab = false;//
             this.bunifuFlatButton3.Location = new System.Drawing.Point(16, 390);
-            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(5);
+
+            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);//
+
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(288, 46);
+            this.bunifuFlatButton3.selected = false;//
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(288, 46);//
             this.bunifuFlatButton3.TabIndex = 2;
             this.bunifuFlatButton3.Text = "            Tutores";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -143,26 +154,30 @@ namespace CapaPresentacion
             this.btnDocentes.DisabledColor = System.Drawing.Color.Gray;
             this.btnDocentes.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDocentes.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDocentes.Iconimage")));
-            this.btnDocentes.Iconimage_right = null;
+            this.btnDocentes.Iconimage_right = null;//
             this.btnDocentes.Iconimage_right_Selected = null;
             this.btnDocentes.Iconimage_Selected = null;
-            this.btnDocentes.IconMarginLeft = 0;
+            this.btnDocentes.IconMarginLeft = 0;//
             this.btnDocentes.IconMarginRight = 0;
             this.btnDocentes.IconRightVisible = true;
             this.btnDocentes.IconRightZoom = 0D;
             this.btnDocentes.IconVisible = true;
             this.btnDocentes.IconZoom = 90D;
             this.btnDocentes.IsTab = false;
-            this.btnDocentes.Location = new System.Drawing.Point(16, 337);
-            this.btnDocentes.Margin = new System.Windows.Forms.Padding(5);
+
+            this.btnDocentes.Location = new System.Drawing.Point(16, 337);//
+            this.btnDocentes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+
             this.btnDocentes.Name = "btnDocentes";
             this.btnDocentes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnDocentes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnDocentes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));//
             this.btnDocentes.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDocentes.selected = false;
             this.btnDocentes.Size = new System.Drawing.Size(288, 46);
             this.btnDocentes.TabIndex = 1;
-            this.btnDocentes.Text = "            Profesores";
+
+            this.btnDocentes.Text = "Profesores";//
+
             this.btnDocentes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDocentes.Textcolor = System.Drawing.Color.White;
             this.btnDocentes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -178,7 +193,7 @@ namespace CapaPresentacion
             this.btnEstudiantes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstudiantes.DisabledColor = System.Drawing.Color.Gray;
             this.btnEstudiantes.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnEstudiantes.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnEstudiantes.Iconimage")));
+            this.btnEstudiantes.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnEstudiantes.Iconimage")));//
             this.btnEstudiantes.Iconimage_right = null;
             this.btnEstudiantes.Iconimage_right_Selected = null;
             this.btnEstudiantes.Iconimage_Selected = null;
@@ -186,14 +201,14 @@ namespace CapaPresentacion
             this.btnEstudiantes.IconMarginRight = 0;
             this.btnEstudiantes.IconRightVisible = true;
             this.btnEstudiantes.IconRightZoom = 0D;
-            this.btnEstudiantes.IconVisible = true;
+            this.btnEstudiantes.IconVisible = true;//
             this.btnEstudiantes.IconZoom = 90D;
             this.btnEstudiantes.IsTab = false;
             this.btnEstudiantes.Location = new System.Drawing.Point(16, 281);
             this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(5);
             this.btnEstudiantes.Name = "btnEstudiantes";
-            this.btnEstudiantes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnEstudiantes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnEstudiantes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));//
+            this.btnEstudiantes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));//
             this.btnEstudiantes.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEstudiantes.selected = false;
             this.btnEstudiantes.Size = new System.Drawing.Size(288, 46);
@@ -206,11 +221,13 @@ namespace CapaPresentacion
             // 
             // Header
             // 
-            this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));
+            this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));//
             this.Header.Controls.Add(this.Salir);
-            this.Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Header.Dock = System.Windows.Forms.DockStyle.Top;//
             this.Header.Location = new System.Drawing.Point(333, 0);
-            this.Header.Margin = new System.Windows.Forms.Padding(4);
+
+            this.Header.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);//
+
             this.Header.Name = "Header";
             this.Header.Size = new System.Drawing.Size(1362, 74);
             this.Header.TabIndex = 1;
@@ -220,7 +237,9 @@ namespace CapaPresentacion
             this.Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
             this.Salir.Location = new System.Drawing.Point(1222, 15);
-            this.Salir.Margin = new System.Windows.Forms.Padding(4);
+
+            this.Salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);//
+
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(53, 46);
             this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -233,14 +252,16 @@ namespace CapaPresentacion
             this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(333, 0);
-            this.Wrapper.Margin = new System.Windows.Forms.Padding(4);
+
+            this.Wrapper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);//
+
             this.Wrapper.Name = "Wrapper";
             this.Wrapper.Size = new System.Drawing.Size(1362, 703);
             this.Wrapper.TabIndex = 2;
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);//
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1695, 703);
             this.Controls.Add(this.Header);
@@ -250,14 +271,14 @@ namespace CapaPresentacion
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMain";
+            this.Text = "FrmMain";//
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.Sidebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Header.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).EndInit();
             this.ResumeLayout(false);
-
+//
         }
 
         #endregion
@@ -269,8 +290,10 @@ namespace CapaPresentacion
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         private Bunifu.Framework.UI.BunifuFlatButton btnDocentes;
         private Bunifu.Framework.UI.BunifuFlatButton btnEstudiantes;
-        private System.Windows.Forms.Label labelUsuario;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label labelCategoria;
+
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;//
+        private System.Windows.Forms.Label label1;
+
     }
 }
