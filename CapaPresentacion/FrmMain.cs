@@ -76,7 +76,11 @@ namespace CapaPresentacion
             }
         }
 
+<<<<<<< HEAD
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
+=======
+        private void Sidebar_Paint(object sender, PaintEventArgs e)
+>>>>>>> Katheryne
         {
 
         }

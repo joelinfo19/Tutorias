@@ -23,8 +23,8 @@ namespace CapaPresentacion
         }
         public void OcultarMoverAncharColumnas()
         {
-            TablaEstudiante.Columns[0].DisplayIndex = 6;
-            TablaEstudiante.Columns[1].DisplayIndex = 6;
+            TablaEstudiante.Columns[0].DisplayIndex = 8;//0
+            TablaEstudiante.Columns[1].DisplayIndex = 8;//1
 
         }
         public void MostrarTablaEstudiante()
@@ -59,7 +59,7 @@ namespace CapaPresentacion
 
                 if (result == DialogResult.OK)
                 {
-                    int delete = Convert.ToInt32(TablaEstudiante.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    string delete = TablaEstudiante.Rows[e.RowIndex].Cells["Estudiante"].Value.ToString();
                     oEstudiante.DeletingStudents(delete);
                     FrmSuccess.confirmacionForm("ELIMINADO");
                     MostrarTablaEstudiante();
@@ -70,18 +70,25 @@ namespace CapaPresentacion
             {
                 FrmMantEstudiante frm = new FrmMantEstudiante();
                 frm.Update = true;
-                frm.textId.Text = TablaEstudiante.Rows[e.RowIndex].Cells["IdEstudiante"].Value.ToString();
-                frm.textCodigo.Text = TablaEstudiante.Rows[e.RowIndex].Cells["CodEstudiante"].Value.ToString();
+                frm.txtCodEstudiante.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Estudiante"].Value.ToString();
                 frm.textNombres.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Nombres"].Value.ToString();
                 frm.textApellidos.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Apellidos"].Value.ToString();
-                frm.textEscuela.Text = TablaEstudiante.Rows[e.RowIndex].Cells["Escuela"].Value.ToString();
-              
+                frm.txtSemestreActivo.Text= TablaEstudiante.Rows[e.RowIndex].Cells["SemestreActivo"].Value.ToString();
+                frm.textEscuela.Text = TablaEstudiante.Rows[e.RowIndex].Cells["EscuelaProfesional"].Value.ToString();
+                frm.txtIdEP.Text = TablaEstudiante.Rows[e.RowIndex].Cells["codigoEP"].Value.ToString();
+                frm.txtIngreso .Text = TablaEstudiante.Rows[e.RowIndex].Cells["AIngreso"].Value.ToString();
+               
                 frm.ShowDialog();
                 MostrarTablaEstudiante();
                 //ShowTotal();
             }
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
