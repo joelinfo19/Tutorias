@@ -67,6 +67,7 @@
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
+			  <!--  -->
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
               <xsd:attribute name="name" use="required" type="xsd:string" />
@@ -108,10 +109,12 @@
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
-  <resheader name="version">
+  <resheader name="version">			  <!--  -->
+
     <value>2.0</value>
   </resheader>
-  <resheader name="reader">
+  <resheader name="reader">			  <!--  -->
+
     <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
@@ -119,7 +122,9 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
+    			  <!--  -->
+
+	<value>
         iVBORw0KGgoAAAANSUhEUgAAA3YAAAOVCAYAAAAlfXKhAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAP+iSURBVHhe7N0HmBTV1i7+//nSvd+9V/QzHdMRAypB
         ECUqCCgIJpIICKggwUQQEFAURZJEQUBykiQ555xzFjFhBEQRCSKYZf3X7mGwp+edmQ67Q+16+3l+zznu
@@ -1399,9 +1404,13 @@
         xNGiiDhaFBFHiyLiaFFEHC2KiKNFEXG0KCKOFkXE0aKIOFoUEUeLIuJoUUQcLYqIo0URMdt3+j81Kgk9
         Vu+NkQAAAABJRU5ErkJggg==
 </value>
+			  <!--  -->
+
   </data>
   <data name="btnEstudiantes.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
+    			  <!--  -->
+
+	<value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d
         a+hsZRUGcC/lDUKzMFOzrJPKMeKIwqkvoeSH/GAgplkfNEhKyIikkqORhrdMEyGiAikIsoI0S0u6qZRm
@@ -1517,5 +1526,7 @@
         DF/EHTHUCVEaAVDBsbVubmsy+Q/6u5GImqr2bBPR/HEtPK6B38gyc+n/SdAdEp3CMIYRE0aM+B8k/NkT
         8ChQBwAAAABJRU5ErkJggg==
 </value>
+			  <!--  -->
+
   </data>
 </root>

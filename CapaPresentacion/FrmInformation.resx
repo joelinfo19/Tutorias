@@ -8,7 +8,7 @@
     The primary goals of this format is to allow a simple XML format 
     that is mostly human readable. The generation and parsing of the 
     various data types are done through the TypeConverter classes 
-    associated with the data types.
+    associated with the data types.s
     
     Example:
     
@@ -67,6 +67,7 @@
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
+			  <!--     -->
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
               <xsd:attribute name="name" use="required" type="xsd:string" />
@@ -94,6 +95,7 @@
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
+		    <!--     -->
             <xsd:complexType>
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
@@ -119,6 +121,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnOk.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <!--     -->
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d
@@ -180,8 +183,10 @@
         xNGiiDhaFBFHiyLiaFFEHC2KiKNFEXG0KCKOFkXE0aKIOFoUEUeLIuJoUUQcLYqIo0URMdt3+j81Kgk9
         Vu+NkQAAAABJRU5ErkJggg==
 </value>
+  <!--     -->
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <!--     -->
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAslSURBVHhe7d1/rJZlHcdxDucIhwPnkFutNJulZNOwbG0hCZhwIGFuFoloU5zApFqtrdmQtTZl
@@ -233,5 +238,6 @@
         t39zr7JDseOJBQpfnRAeLcxBZb6yXrldsUtd7H/yA0o3N3fZTyv7DPss+6pkn22/prafaLP8nwfqTYt5
         SJnjC3u4Q+zP2J8d8r8OAAAAAAAAAAAAAAAAAAAAAAAAoKUpU/4PIjvzr4h+qF8AAAAASUVORK5CYII=
 </value>
+  <!--     -->
   </data>
 </root>

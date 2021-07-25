@@ -10,32 +10,32 @@ namespace CapaNegocio
 {
     public class N_Estudiante
     {
-        D_Estudiante data = new D_Estudiante();
-        E_Estudiante entities = new E_Estudiante();
+        D_Estudiante data = new D_Estudiante();//
+        E_Estudiante entities = new E_Estudiante();//
 
-        public DataTable ListingStudents()
+        public DataTable ListingStudents()//
         {
-            return data.ListStudents();
+            return data.ListStudents();//
         }
-        public DataTable SearchingStudents(string search)
+        public DataTable SearchingStudents(string search)//
         {
             entities.Search = search;
-            return data.SearchStudents(entities);
+            return data.SearchStudents(entities);//
         }
 
-        public void CreatingStudents(E_Estudiante product)
+        public void CreatingStudents(E_Estudiante product)//
         {
-            data.CreateStudent(product);
+            data.CreateStudent(product);//
         }
 
-        public void UpdatingStudents(E_Estudiante product)
+        public void UpdatingStudents(E_Estudiante product)//
         {
-            data.UpdateStudent(product);
+            data.UpdateStudent(product);//
         }
 
-        public void DeletingStudents(string CodEstudiante)
+        public void DeletingStudents(string CodEstudiante)//
         {
-            data.DeleteStudent(CodEstudiante);
+            data.DeleteStudent(CodEstudiante);//
         }
     }
 }

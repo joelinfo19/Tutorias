@@ -91,6 +91,7 @@
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
               <xsd:attribute ref="xml:space" />
+			  <!-- -->
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -119,6 +120,8 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnOk.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  			  <!-- -->
+
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d
@@ -182,6 +185,8 @@
 </value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  			  <!-- -->
+
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAABEKSURBVHhe7Z198GdVXcdhWRZYhV1WVpdFlLEc2wUTzQGZAWuYZkQdhl0eAgpICRCBBCFELQUr
@@ -259,5 +264,9 @@
         GdN+aLB6RFuLNqDDkL7FnIE0hCpdgi6bIx3bdv50tAnpXqWhtDznyRgzTXbY4f8AfW5W0J1dmuUAAAAA
         SUVORK5CYII=
 </value>
+			  <!-- -->
+
   </data>
+  			  <!-- -->
+
 </root>

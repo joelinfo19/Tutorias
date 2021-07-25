@@ -14,68 +14,68 @@ namespace CapaPresentacion
     {
         public FrmMain()
         {
-            InitializeComponent();
+            InitializeComponent();//
         }
-        private void FrmMain_Load(object sender, EventArgs e)
+        private void FrmMain_Load(object sender, EventArgs e)//
         {
             PantallaOk();
         }
         public void PantallaOk()
         {
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;//
         }
         public void selectedBotons(Bunifu.Framework.UI.BunifuFlatButton sender)
-        {
+        {//
            
-            btnEstudiantes.Textcolor = Color.WhiteSmoke;
+            btnEstudiantes.Textcolor = Color.WhiteSmoke;//
            
-
+//
             sender.selected = true;
 
-            if (sender.selected)
+            if (sender.selected)//
             {
-                sender.Textcolor = Color.FromArgb(98, 195, 140);
-            }
+                sender.Textcolor = Color.FromArgb(98, 195, 140);//
+            }//
         }
-        private void btnEstudiantes_Click(object sender,EventArgs e)
+        private void btnEstudiantes_Click(object sender,EventArgs e)//
         {
-            AbrirFormulriosEnWrapper(new FrmEstudiante());
-        }
-        private void btnDocentes_Click(object sender, EventArgs e)
+            AbrirFormulriosEnWrapper(new FrmEstudiante());//
+        }//
+        private void btnDocentes_Click(object sender, EventArgs e)//
         {
             AbrirFormulriosEnWrapper(new FrmDocente());
-        }
+        }//
         private Form FormActive = null;
-        private void AbrirFormulriosEnWrapper(Form FormHijo)
-        {
-            if (FormActive != null)
-                FormActive.Close();
-            FormActive = FormHijo;
-            FormHijo.TopLevel = false;
-            FormHijo.Dock = DockStyle.Fill;
-            Wrapper.Controls.Add(FormHijo);
+        private void AbrirFormulriosEnWrapper(Form FormHijo)//
+        {//
+            if (FormActive != null)//
+                FormActive.Close();//
+            FormActive = FormHijo;//
+            FormHijo.TopLevel = false;//
+            FormHijo.Dock = DockStyle.Fill;//
+            Wrapper.Controls.Add(FormHijo);//
             Wrapper.Tag = FormHijo;
-            FormHijo.BringToFront();
+            FormHijo.BringToFront();//
             FormHijo.Show();
 
         }
-
-        private void Salir_Click(object sender, EventArgs e)
-        {
+//
+        private void Salir_Click(object sender, EventArgs e)//
+        {//
             DialogResult resultado = new DialogResult();
-            Form mensaje = new FrmInformation("Seguro desea salir del sistema?");
+            Form mensaje = new FrmInformation("Seguro desea salir del sistema?");//
             resultado = mensaje.ShowDialog();
-            if (resultado == DialogResult.OK)
+            if (resultado == DialogResult.OK)/////
             {
                 Application.Exit();
                 this.Hide();
             }
         }
-
-        private void Sidebar_Paint(object sender, PaintEventArgs e)
+//
+        private void Sidebar_Paint(object sender, PaintEventArgs e)//
         {
 
         }
     }
-}
+}//
