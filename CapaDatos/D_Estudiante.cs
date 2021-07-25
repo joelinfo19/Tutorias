@@ -46,13 +46,13 @@ namespace CapaDatos
             return tabla;
         }
 
-        public void DeleteStudent(string CodEstudiante)
+        public void DeleteStudent(int id)
         {
             SqlCommand cmd = new SqlCommand("SP_ELIMINARESTUDIANTE", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@ESTUDIANTE", CodEstudiante);
+            cmd.Parameters.AddWithValue("@IDESTUDIANTE", id);
 
             cmd.ExecuteNonQuery();
             conexion.Close();
@@ -64,15 +64,11 @@ namespace CapaDatos
             SqlCommand cmd = new SqlCommand("SP_INSERTARESTUDIANTE", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
-            
+
             cmd.Parameters.AddWithValue("@NOMBRES", estudiante.Nombres);
             cmd.Parameters.AddWithValue("@APELLIDOS", estudiante.Apellidos);
-            cmd.Parameters.AddWithValue("@SEMESTREACTIVO", estudiante.SemestreActivo);
-            cmd.Parameters.AddWithValue("@ESTUDIANTE", estudiante.Estudiante);
-            cmd.Parameters.AddWithValue("@ESCUELAPROFESIONAL", estudiante.EscuelaProfesional);
-            cmd.Parameters.AddWithValue("@CODIGOEP", estudiante.CodEP);
-            cmd.Parameters.AddWithValue("@AINGRESO", estudiante.AIngreso);
-
+            cmd.Parameters.AddWithValue("@ESCUELA", estudiante.Escuela);
+           
             cmd.ExecuteNonQuery();
             conexion.Close();
         }
@@ -83,13 +79,12 @@ namespace CapaDatos
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@ESTUDIANTE", estudiante.Estudiante);
+            cmd.Parameters.AddWithValue("@IDESTUDIANTE", estudiante.IdEstudiante);
             cmd.Parameters.AddWithValue("@NOMBRES", estudiante.Nombres);
-            cmd.Parameters.AddWithValue("@APELLIDOS", estudiante.Apellidos);
-            cmd.Parameters.AddWithValue("@SEMESTREACTIVO", estudiante.SemestreActivo);
-            cmd.Parameters.AddWithValue("@ESCUELAPROFESIONAL", estudiante.EscuelaProfesional);
-            cmd.Parameters.AddWithValue("@CODIGOEP", estudiante.CodEP);
-            cmd.Parameters.AddWithValue("@AINGRESO", estudiante.AIngreso);
+            cmd.Parameters.AddWithValue("@APELLIDOS",  estudiante.Apellidos);
+            cmd.Parameters.AddWithValue("@ESCUELA", estudiante.Escuela);
+            
+
             cmd.ExecuteNonQuery();
             conexion.Close();
         }

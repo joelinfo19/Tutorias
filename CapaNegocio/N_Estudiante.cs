@@ -33,9 +33,9 @@ namespace CapaNegocio
             data.UpdateStudent(product);
         }
 
-        public void DeletingStudents(string CodEstudiante)
+        public void DeletingStudents(int id)
         {
-            data.DeleteStudent(CodEstudiante);
+            data.DeleteStudent(id);
         }
     }
 }

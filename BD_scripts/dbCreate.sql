@@ -1,24 +1,13 @@
 CREATE DATABASE Tutorias
-drop table Estudiante
 create table Estudiante(
-	IdEstudiante int identity(1,1) ,
+	IdEstudiante int identity(1,1) not null ,
 	CodEstudiante as ('AL'+right('00'+convert(varchar,IdEstudiante),(2))),
 	Nombres varchar(20),
 	Apellidos varchar(20),
-	SemestreActivo varchar(12),
-	Estudiante varchar(6),
-	EscuelaProfesional varchar (20),
-	codigoEP varchar(5),
-	AIngreso varchar(12),
+	Escuela varchar (20),
 	PRIMARY KEY (IdEstudiante)
 );
-<<<<<<< HEAD
 
-=======
-go
---drop table Estudiante
-go
->>>>>>> Katheryne
 create table Docente(
 	IdDocente int identity(1,1),
 	Nombres varchar(30),
@@ -46,9 +35,6 @@ drop table Estudiante
 --select * from Estudiante
 --------------------------------------------
 ---PROCEDIMIENTO ALMACENADO BUSCARESTUDIANTE
-go
-drop proc SP_INSERTARESTUDIANTE
-go
 CREATE PROC SP_BUSCARESTUDIANTE
 @BUSCAR varchar(20)
 as
@@ -58,46 +44,29 @@ where Nombres like @BUSCAR + '%'
 create proc SP_INSERTARESTUDIANTE
 @NOMBRES varchar(20),
 @APELLIDOS varchar(20),
-@ESCUELAPROFESIONAL varchar(20),
-@SEMESTREACTIVO varchar(12),
-@ESTUDIANTE varchar(6),
-@CODIGOEP varchar(5),
-@AINGRESO varchar(12)
+@ESCUELA varchar(20)
 as 
-insert into Estudiante values (@NOMBRES,@APELLIDOS,@SEMESTREACTIVO,@ESTUDIANTE,@ESCUELAPROFESIONAL,@CODIGOEP,@AINGRESO)
-GO
+insert into Estudiante values (@NOMBRES,@APELLIDOS,@ESCUELA)
+
 ---PROCEDIMIENTO ALMACENADO EDITARESTUDIANTE
-DROP PROC SP_EDITARESTUDIANTE
-GO
+
 create proc SP_EDITARESTUDIANTE
+@IDESTUDIANTE varchar(20),
 @NOMBRES varchar(20),
 @APELLIDOS varchar(20),
-@ESCUELAPROFESIONAL varchar(20),
-@SEMESTREACTIVO varchar(12),
-@ESTUDIANTE varchar(6),
-@CODIGOEP varchar(5),
-@AINGRESO varchar(12)
+@ESCUELA varchar(20)
 as 
-update Estudiante set Nombres=@NOMBRES,Apellidos=@APELLIDOS,SemestreActivo=@SemestreActivo, EscuelaProfesional=@ESCUELAPROFESIONAL,codigoEP=@CODIGOEP,
-AIngreso=@AINGRESO
-where Estudiante =@ESTUDIANTE
-GO
---------------------------------------------
-drop proc SP_ELIMINARESTUDIANTE
-go
+update Estudiante set Nombres=@NOMBRES,Apellidos=@APELLIDOS,Escuela=@ESCUELA
+where IdEstudiante =@IDESTUDIANTE
 ---PROCEDIMIENTO ALMACENADO ELiminarESTUDIANTE
 CREATE PROC SP_ELIMINARESTUDIANTE
-@ESTUDIANTE varchar(6)
+@IDESTUDIANTE int
 as 
 delete Estudiante
-Where Estudiante =@ESTUDIANTE
+Where IdEstudiante=@IDESTUDIANTE
 ----Listing Student
-go
-EXEC SP_LISTARESTUDIANTE
-go
 create proc SP_LISTARESTUDIANTE
 as
-<<<<<<< HEAD
 select top 100 
 Estudiante.IdEstudiante,
 Estudiante.CodEstudiante,
@@ -108,22 +77,6 @@ from Estudiante
 order by IdEstudiante asc
 select * from Estudiante
 
-=======
-select Estudiante,Nombres,Apellidos,SemestreActivo,EscuelaProfesional,codigoEP,AIngreso from Estudiante
---- Search students
-go
-drop proc SP_BUSCARESTUDIANTE
-go
-create proc SP_BUSCARESTUDIANTE
-@BUSCAR nvarchar(20)
-as
-select Estudiante,Nombres,Apellidos,SemestreActivo,EscuelaProfesional,codigoEP,AIngreso
-from Estudiante
-where Nombres like @BUSCAR + '%'
-
-
---drop procedure SP_BUSCARESTUDIANTE
->>>>>>> Katheryne
 ---------------------------------
 ---Procedimientos almacenados para Docente
 ----Stored Procedures for search Docente
@@ -177,21 +130,10 @@ from Docente
 order by IdDocente asc
 select * from Docente
 
-exec SP_LISTARDOCENTE
+--exec SP_LISTARDOCENTE
 
-<<<<<<< HEAD
 --drop procedure SP_LISTARDOCENTE
 --drop procedure SP_ELIMINARDOCENTE
-=======
-drop procedure SP_LISTARDOCENTE
-
-
-
-
-
-
-drop procedure SP_ELIMINARDOCENTE
->>>>>>> Katheryne
 
 
 
@@ -214,7 +156,6 @@ ALTER COLUMN IdDocente int identity(1,1);
 DELETE FROM Docente WHERE Nombres='adriana';]
 drop table Docente
 
-<<<<<<< HEAD
 --Agregar docentes con datos reales
 insert into Docente values ('Abdon','Ribas Puga','Licenciado en Fisico Matematicas','Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica','Ingenieria Informatica y de Sistemas','Nombrado')
 insert into Docente values ('Ana Rocio','Cardenas Maita','Magister en Ciencias en Sistemas de Informacion','Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica','Ingenieria Informatica y de Sistemas','Contratado')
@@ -257,8 +198,3 @@ insert into Docente values ('Waldo Elio','Ibarra Zambrano','Maestro en Ciencias 
 insert into Docente values ('Waldo','Villa Rodriguez','Ingeniero Informatico y de Sistemas','Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica','Ingenieria Informatica y de Sistemas','Contratado')
 insert into Docente values ('Willian','Zamalloa Paro','Ingeniero Informatico y de Sistemas','Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica','Ingenieria Informatica y de Sistemas','Contratado')
 insert into Docente values ('Yeshica Isela','Ormeño Ayala','Master en Tecnologias Informaticas Avanzadas','Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica','Ingenieria Informatica y de Sistemas','Nombrado')
-=======
-
-select * from Estudiante
-exec SP_LISTARESTUDIANTE
->>>>>>> Katheryne
