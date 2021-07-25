@@ -20,6 +20,19 @@ C:\Users\User\Desktop\SoftwareC#\Tut_capas\CapaNegocio\obj\Debug\CapaNegocio.csp
 C:\Users\User\Desktop\SoftwareC#\Tut_capas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\User\Desktop\SoftwareC#\Tut_capas\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\User\Desktop\SoftwareC#\Tut_capas\CapaNegocio\obj\Debug\CapaNegocio.pdb
+<<<<<<< HEAD
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\bin\Debug\CapaEntidades.dll
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\bin\Debug\CapaEntidades.pdb
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\archivos de aprendizaje\UNIVERSIDAD\2021-I\Desarrollo de software\RepositorioTutorias\Tutorias\CapaNegocio\obj\Debug\CapaNegocio.pdb
+=======
 D:\7moSemestre\DS\Tutorias-main\CapaNegocio\bin\Debug\CapaNegocio.dll
 D:\7moSemestre\DS\Tutorias-main\CapaNegocio\bin\Debug\CapaNegocio.pdb
 D:\7moSemestre\DS\Tutorias-main\CapaNegocio\bin\Debug\CapaDatos.dll
@@ -31,3 +44,4 @@ D:\7moSemestre\DS\Tutorias-main\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCom
 D:\7moSemestre\DS\Tutorias-main\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 D:\7moSemestre\DS\Tutorias-main\CapaNegocio\obj\Debug\CapaNegocio.dll
 D:\7moSemestre\DS\Tutorias-main\CapaNegocio\obj\Debug\CapaNegocio.pdb
+>>>>>>> Katheryne

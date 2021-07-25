@@ -24,8 +24,8 @@ namespace CapaPresentacion
 
         public void OcultarMoverAncharColumnas()
         {
-            TablaDocente.Columns[0].DisplayIndex = 7;
-            TablaDocente.Columns[1].DisplayIndex = 7;
+            TablaDocente.Columns[0].DisplayIndex = 8;
+            TablaDocente.Columns[1].DisplayIndex = 8;
 
         }
         public void MostrarTablaDocente()
@@ -78,6 +78,7 @@ namespace CapaPresentacion
                 frm.textTitulo.Text = TablaDocente.Rows[e.RowIndex].Cells["TituloAcademico"].Value.ToString();
                 frm.textFacultad.Text = TablaDocente.Rows[e.RowIndex].Cells["Facultad"].Value.ToString();
                 frm.textEscuela.Text = TablaDocente.Rows[e.RowIndex].Cells["EscuelaProfesional"].Value.ToString();
+                frm.textCategoria.Text = TablaDocente.Rows[e.RowIndex].Cells["Categoria"].Value.ToString();
 
                 frm.ShowDialog();
                 MostrarTablaDocente();

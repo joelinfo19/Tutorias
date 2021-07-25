@@ -15,6 +15,9 @@ namespace CapaPresentacion
         public FrmMain()
         {
             InitializeComponent();
+            Login test = new Login();
+            test.ShowDialog();
+            labelUsuario.Text = test.usuario;
         }
         private void FrmMain_Load(object sender, EventArgs e)
         {
@@ -64,7 +67,7 @@ namespace CapaPresentacion
         private void Salir_Click(object sender, EventArgs e)
         {
             DialogResult resultado = new DialogResult();
-            Form mensaje = new FrmInformation("Seguro desea salir del sistema?");
+            Form mensaje = new FrmInformation("¿Desea cerrar sesión?");
             resultado = mensaje.ShowDialog();
             if (resultado == DialogResult.OK)
             {
@@ -73,7 +76,7 @@ namespace CapaPresentacion
             }
         }
 
-        private void Sidebar_Paint(object sender, PaintEventArgs e)
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
 
         }
