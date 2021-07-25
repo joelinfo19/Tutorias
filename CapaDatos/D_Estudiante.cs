@@ -89,7 +89,7 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@SEMESTREACTIVO", estudiante.SemestreActivo);
             cmd.Parameters.AddWithValue("@ESCUELAPROFESIONAL", estudiante.EscuelaProfesional);
             cmd.Parameters.AddWithValue("@CODIGOEP", estudiante.CodEP);
-            cmd.Parameters.AddWithValue("@AINGRESO", estudiante.AIngreso);
+            cmd.Parameters.AddWithValue("@AINGRESO", estudiante.AIngreso);//comments
             cmd.ExecuteNonQuery();
             conexion.Close();
         }
