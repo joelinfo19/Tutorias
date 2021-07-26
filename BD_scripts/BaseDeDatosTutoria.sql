@@ -133,7 +133,7 @@ insert into Logins values ('Cata','cata','Contratado')
 SELECT * FROM Logins
 
 --Agregar docentes con datos reales
-insert into Docente values ('Abdon','Ribas Puga','Licenciado en Fisico Matematicas','Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica','Ingenieria Informatica y de Sistemas','Nombrado')
+insert into Docente values ('Abdon','Ribas Puga','Licenciado en Fisico Matematicas','Facultad de Ing Electrica, Electronica, Informatica y Mecanica','Ingenieria Informatica y de Sistemas','Nombrado')
 insert into Docente values ('Ana Rocio','Cardenas Maita','Magister en Ciencias en Sistemas de Informacion','Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica','Ingenieria Informatica y de Sistemas','Contratado')
 insert into Docente values ('Dennis Ivan','Candia Oviedo','Ingeniero Informatico y de Sistemas','Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica','Ingenieria Informatica y de Sistemas','Nombrado')
 insert into Docente values ('Doris Sabina','Aguirre Carbajal','Maestro en Ciencias: Ing de Sistemas con mencion en Ing de Software','Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica','Ingenieria Informatica y de Sistemas','Contratado')
